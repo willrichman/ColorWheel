@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15172F7D1BD9C6C800F2A8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15172F7C1BD9C6C800F2A8E7 /* AppDelegate.swift */; };
+		15172F7F1BD9C6C800F2A8E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15172F7E1BD9C6C800F2A8E7 /* ViewController.swift */; };
+		15172F821BD9C6C800F2A8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15172F801BD9C6C800F2A8E7 /* Main.storyboard */; };
+		15172F841BD9C6C800F2A8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15172F831BD9C6C800F2A8E7 /* Assets.xcassets */; };
+		15172F871BD9C6C800F2A8E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15172F851BD9C6C800F2A8E7 /* LaunchScreen.storyboard */; };
+		15172F8C1BD9C6C800F2A8E7 /* ColorWheel WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 15172F8B1BD9C6C800F2A8E7 /* ColorWheel WatchKit App.app */; };
+		15172F921BD9C6C800F2A8E7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15172F901BD9C6C800F2A8E7 /* Interface.storyboard */; };
+		15172F941BD9C6C800F2A8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15172F931BD9C6C800F2A8E7 /* Assets.xcassets */; };
+		15172F9B1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15172F9A1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15172FA01BD9C6C800F2A8E7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15172F9F1BD9C6C800F2A8E7 /* InterfaceController.swift */; };
+		15172FA21BD9C6C800F2A8E7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15172FA11BD9C6C800F2A8E7 /* ExtensionDelegate.swift */; };
+		15172FA41BD9C6C800F2A8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15172FA31BD9C6C800F2A8E7 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15172F8D1BD9C6C800F2A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15172F711BD9C6C800F2A8E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15172F8A1BD9C6C800F2A8E7;
+			remoteInfo = "ColorWheel WatchKit App";
+		};
+		15172F9C1BD9C6C800F2A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15172F711BD9C6C800F2A8E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15172F991BD9C6C800F2A8E7;
+			remoteInfo = "ColorWheel WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15172FAB1BD9C6C800F2A8E7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				15172F9B1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15172FAF1BD9C6C800F2A8E7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				15172F8C1BD9C6C800F2A8E7 /* ColorWheel WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15172F791BD9C6C800F2A8E7 /* ColorWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15172F7C1BD9C6C800F2A8E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15172F7E1BD9C6C800F2A8E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15172F811BD9C6C800F2A8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15172F831BD9C6C800F2A8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15172F861BD9C6C800F2A8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15172F881BD9C6C800F2A8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15172F8B1BD9C6C800F2A8E7 /* ColorWheel WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorWheel WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15172F911BD9C6C800F2A8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		15172F931BD9C6C800F2A8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15172F951BD9C6C800F2A8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15172F9A1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColorWheel WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15172F9F1BD9C6C800F2A8E7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		15172FA11BD9C6C800F2A8E7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		15172FA31BD9C6C800F2A8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15172FA51BD9C6C800F2A8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15172F761BD9C6C800F2A8E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15172F971BD9C6C800F2A8E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15172F701BD9C6C800F2A8E7 = {
+			isa = PBXGroup;
+			children = (
+				15172F7B1BD9C6C800F2A8E7 /* ColorWheel */,
+				15172F8F1BD9C6C800F2A8E7 /* ColorWheel WatchKit App */,
+				15172F9E1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension */,
+				15172F7A1BD9C6C800F2A8E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15172F7A1BD9C6C800F2A8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15172F791BD9C6C800F2A8E7 /* ColorWheel.app */,
+				15172F8B1BD9C6C800F2A8E7 /* ColorWheel WatchKit App.app */,
+				15172F9A1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15172F7B1BD9C6C800F2A8E7 /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				15172F7C1BD9C6C800F2A8E7 /* AppDelegate.swift */,
+				15172F7E1BD9C6C800F2A8E7 /* ViewController.swift */,
+				15172F801BD9C6C800F2A8E7 /* Main.storyboard */,
+				15172F831BD9C6C800F2A8E7 /* Assets.xcassets */,
+				15172F851BD9C6C800F2A8E7 /* LaunchScreen.storyboard */,
+				15172F881BD9C6C800F2A8E7 /* Info.plist */,
+			);
+			path = ColorWheel;
+			sourceTree = "<group>";
+		};
+		15172F8F1BD9C6C800F2A8E7 /* ColorWheel WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				15172F901BD9C6C800F2A8E7 /* Interface.storyboard */,
+				15172F931BD9C6C800F2A8E7 /* Assets.xcassets */,
+				15172F951BD9C6C800F2A8E7 /* Info.plist */,
+			);
+			path = "ColorWheel WatchKit App";
+			sourceTree = "<group>";
+		};
+		15172F9E1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15172F9F1BD9C6C800F2A8E7 /* InterfaceController.swift */,
+				15172FA11BD9C6C800F2A8E7 /* ExtensionDelegate.swift */,
+				15172FA31BD9C6C800F2A8E7 /* Assets.xcassets */,
+				15172FA51BD9C6C800F2A8E7 /* Info.plist */,
+			);
+			path = "ColorWheel WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15172F781BD9C6C800F2A8E7 /* ColorWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15172FB01BD9C6C800F2A8E7 /* Build configuration list for PBXNativeTarget "ColorWheel" */;
+			buildPhases = (
+				15172F751BD9C6C800F2A8E7 /* Sources */,
+				15172F761BD9C6C800F2A8E7 /* Frameworks */,
+				15172F771BD9C6C800F2A8E7 /* Resources */,
+				15172FAF1BD9C6C800F2A8E7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15172F8E1BD9C6C800F2A8E7 /* PBXTargetDependency */,
+			);
+			name = ColorWheel;
+			productName = ColorWheel;
+			productReference = 15172F791BD9C6C800F2A8E7 /* ColorWheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15172F8A1BD9C6C800F2A8E7 /* ColorWheel WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15172FAC1BD9C6C800F2A8E7 /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit App" */;
+			buildPhases = (
+				15172F891BD9C6C800F2A8E7 /* Resources */,
+				15172FAB1BD9C6C800F2A8E7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15172F9D1BD9C6C800F2A8E7 /* PBXTargetDependency */,
+			);
+			name = "ColorWheel WatchKit App";
+			productName = "ColorWheel WatchKit App";
+			productReference = 15172F8B1BD9C6C800F2A8E7 /* ColorWheel WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		15172F991BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15172FA81BD9C6C800F2A8E7 /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit Extension" */;
+			buildPhases = (
+				15172F961BD9C6C800F2A8E7 /* Sources */,
+				15172F971BD9C6C800F2A8E7 /* Frameworks */,
+				15172F981BD9C6C800F2A8E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorWheel WatchKit Extension";
+			productName = "ColorWheel WatchKit Extension";
+			productReference = 15172F9A1BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15172F711BD9C6C800F2A8E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Will Richman";
+				TargetAttributes = {
+					15172F781BD9C6C800F2A8E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					15172F8A1BD9C6C800F2A8E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					15172F991BD9C6C800F2A8E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 15172F741BD9C6C800F2A8E7 /* Build configuration list for PBXProject "ColorWheel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15172F701BD9C6C800F2A8E7;
+			productRefGroup = 15172F7A1BD9C6C800F2A8E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15172F781BD9C6C800F2A8E7 /* ColorWheel */,
+				15172F8A1BD9C6C800F2A8E7 /* ColorWheel WatchKit App */,
+				15172F991BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15172F771BD9C6C800F2A8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15172F871BD9C6C800F2A8E7 /* LaunchScreen.storyboard in Resources */,
+				15172F841BD9C6C800F2A8E7 /* Assets.xcassets in Resources */,
+				15172F821BD9C6C800F2A8E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15172F891BD9C6C800F2A8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15172F941BD9C6C800F2A8E7 /* Assets.xcassets in Resources */,
+				15172F921BD9C6C800F2A8E7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15172F981BD9C6C800F2A8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15172FA41BD9C6C800F2A8E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15172F751BD9C6C800F2A8E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15172F7F1BD9C6C800F2A8E7 /* ViewController.swift in Sources */,
+				15172F7D1BD9C6C800F2A8E7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15172F961BD9C6C800F2A8E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15172FA21BD9C6C800F2A8E7 /* ExtensionDelegate.swift in Sources */,
+				15172FA01BD9C6C800F2A8E7 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15172F8E1BD9C6C800F2A8E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15172F8A1BD9C6C800F2A8E7 /* ColorWheel WatchKit App */;
+			targetProxy = 15172F8D1BD9C6C800F2A8E7 /* PBXContainerItemProxy */;
+		};
+		15172F9D1BD9C6C800F2A8E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15172F991BD9C6C800F2A8E7 /* ColorWheel WatchKit Extension */;
+			targetProxy = 15172F9C1BD9C6C800F2A8E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15172F801BD9C6C800F2A8E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15172F811BD9C6C800F2A8E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15172F851BD9C6C800F2A8E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15172F861BD9C6C800F2A8E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		15172F901BD9C6C800F2A8E7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15172F911BD9C6C800F2A8E7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15172FA61BD9C6C800F2A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15172FA71BD9C6C800F2A8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15172FA91BD9C6C800F2A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ColorWheel WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ColorWheel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		15172FAA1BD9C6C800F2A8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ColorWheel WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ColorWheel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		15172FAD1BD9C6C800F2A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ColorWheel_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorWheel WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ColorWheel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		15172FAE1BD9C6C800F2A8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ColorWheel_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorWheel WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ColorWheel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		15172FB11BD9C6C800F2A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColorWheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ColorWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		15172FB21BD9C6C800F2A8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColorWheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ColorWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15172F741BD9C6C800F2A8E7 /* Build configuration list for PBXProject "ColorWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15172FA61BD9C6C800F2A8E7 /* Debug */,
+				15172FA71BD9C6C800F2A8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15172FA81BD9C6C800F2A8E7 /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15172FA91BD9C6C800F2A8E7 /* Debug */,
+				15172FAA1BD9C6C800F2A8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15172FAC1BD9C6C800F2A8E7 /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15172FAD1BD9C6C800F2A8E7 /* Debug */,
+				15172FAE1BD9C6C800F2A8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15172FB01BD9C6C800F2A8E7 /* Build configuration list for PBXNativeTarget "ColorWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15172FB11BD9C6C800F2A8E7 /* Debug */,
+				15172FB21BD9C6C800F2A8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15172F711BD9C6C800F2A8E7 /* Project object */;
+}
