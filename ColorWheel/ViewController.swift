@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, RotaryWheelDelegate {
+	
+	var colorWheelView: ColorWheelView!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		let wheelDiameter = view.bounds.width * 0.9
+		let wheelFrame = CGRect(x: view.center.x - (wheelDiameter / 2), y: view.center.y - (wheelDiameter / 2), width: wheelDiameter, height: wheelDiameter)
+		colorWheelView = ColorWheelView(frame: wheelFrame, sections: 4)
+		colorWheelView.delegate = self
+		view.addSubview(colorWheelView)
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	func wheelDidChangeValue(newValue: String) {
+		
 	}
-
 
 }
 
