@@ -20,6 +20,7 @@
 		15172FA21BD9C6C800F2A8E7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15172FA11BD9C6C800F2A8E7 /* ExtensionDelegate.swift */; };
 		15172FA41BD9C6C800F2A8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15172FA31BD9C6C800F2A8E7 /* Assets.xcassets */; };
 		15EFF2841BDC9185001EA402 /* ColorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EFF2831BDC9185001EA402 /* ColorWheelView.swift */; };
+		15EFF2881BDD71FA001EA402 /* ColorWheelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EFF2871BDD71FA001EA402 /* ColorWheelSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		15172FA31BD9C6C800F2A8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15172FA51BD9C6C800F2A8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15EFF2831BDC9185001EA402 /* ColorWheelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheelView.swift; sourceTree = "<group>"; };
+		15EFF2871BDD71FA001EA402 /* ColorWheelSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheelSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				15172F7C1BD9C6C800F2A8E7 /* AppDelegate.swift */,
 				15172F7E1BD9C6C800F2A8E7 /* ViewController.swift */,
 				15EFF2831BDC9185001EA402 /* ColorWheelView.swift */,
+				15EFF2871BDD71FA001EA402 /* ColorWheelSection.swift */,
 				15172F801BD9C6C800F2A8E7 /* Main.storyboard */,
 				15172F831BD9C6C800F2A8E7 /* Assets.xcassets */,
 				15172F851BD9C6C800F2A8E7 /* LaunchScreen.storyboard */,
@@ -291,6 +294,7 @@
 				15EFF2841BDC9185001EA402 /* ColorWheelView.swift in Sources */,
 				15172F7F1BD9C6C800F2A8E7 /* ViewController.swift in Sources */,
 				15172F7D1BD9C6C800F2A8E7 /* AppDelegate.swift in Sources */,
+				15EFF2881BDD71FA001EA402 /* ColorWheelSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

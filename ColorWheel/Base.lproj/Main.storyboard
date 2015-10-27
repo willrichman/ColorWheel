@@ -17,24 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate to change watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTs-QO-Te3">
-                                <rect key="frame" x="96.5" y="601.5" width="181.5" height="20.5"/>
+                                <rect key="frame" x="96" y="601" width="181.5" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQH-sO-ofZ">
+                                <rect key="frame" x="63.5" y="564" width="248" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="pHH-yD-ls3"/>
+                                    <constraint firstAttribute="width" constant="248" id="vmp-Wk-A7x"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WTs-QO-Te3" firstAttribute="top" secondItem="PQH-sO-ofZ" secondAttribute="bottom" constant="2.5" id="2rf-o6-96T"/>
+                            <constraint firstItem="PQH-sO-ofZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KWa-KE-Z8S"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WTs-QO-Te3" secondAttribute="bottom" constant="45" id="UhT-wJ-wGU"/>
                             <constraint firstItem="WTs-QO-Te3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s9z-IY-4eX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="colorView" destination="PQH-sO-ofZ" id="mN3-Vg-17f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="264.5" y="376.5"/>
         </scene>
     </scenes>
 </document>
