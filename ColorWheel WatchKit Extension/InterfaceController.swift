@@ -81,7 +81,16 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 			//Use this to update the UI instantaneously (otherwise, takes a little while)
 			dispatch_async(dispatch_get_main_queue()) {
 				self.currentColor = color
-				self.drawCircle()
+				self.animateWithDuration(0.5, animations: { () -> Void in
+					self.circleButton.setAlpha(0.0)
+				}, completion: { () -> Void in
+					self.drawCircle()
+					self.animateWithDuration(0.5, animations: { () -> Void in
+						self.circleButton.setAlpha(1.0)
+					}, completion: { () -> Void in
+							
+					})
+				})
 				replyHandler(["response": "success"])
 			}
 		}

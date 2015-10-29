@@ -11,7 +11,6 @@ import WatchConnectivity
 
 class ViewController: UIViewController, RotaryWheelDelegate, WCSessionDelegate {
 	
-	@IBOutlet weak var colorView: UIView!
 	var session: WCSession!
 	
 	var colorWheelView: ColorWheelView!
@@ -33,7 +32,6 @@ class ViewController: UIViewController, RotaryWheelDelegate, WCSessionDelegate {
 	}
 
 	func wheelDidChangeValue(newValue: UIColor) {
-		colorView.backgroundColor = newValue
 		
 		// Pack the new UIColor value as NSData to pass via WCSession.sendMessage
 		let colorToPass = NSKeyedArchiver.archivedDataWithRootObject(newValue)
