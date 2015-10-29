@@ -45,6 +45,8 @@ class ColorWheelView: UIControl {
 		print(angle)
 		print(container.center)
 		
+		// For each section in the wheel, draw an arc from the edge offset by the number of sections, draw a line to the center, then close the path and fill it with a color evenly spread across hues.
+		
 		for section in  0..<numberOfSections {
 			
 			let sectionLayer = CAShapeLayer(layer: container.layer)

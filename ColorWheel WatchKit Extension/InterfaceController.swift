@@ -8,13 +8,14 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
-
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
 	@IBOutlet weak var circleButton: WKInterfaceButton!
 	
 	var currentColor: UIColor = UIColor.blueColor()
+	var session: WCSession!
 	
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -25,6 +26,12 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+		
+		if (WCSession.isSupported()) {
+			session = WCSession.defaultSession()
+			session.delegate = self
+			session.activateSession()
+		}
     }
 
     override func didDeactivate() {
@@ -64,6 +71,22 @@ class InterfaceController: WKInterfaceController {
 		UIGraphicsEndImageContext()
 		
 		circleButton.setBackgroundImage(uiimage)
+	}
+	
+	func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+		if let
+			colorData = message["colorValue"] as? NSData,
+			color = NSKeyedUnarchiver.unarchiveObjectWithData(colorData) as? UIColor
+		{
+			//Use this to update the UI instantaneously (otherwise, takes a little while)
+			dispatch_async(dispatch_get_main_queue()) {
+				self.currentColor = color
+				self.drawCircle()
+				replyHandler(["response": "success"])
+			}
+		}
+		
+
 	}
 	
 }
